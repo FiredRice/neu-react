@@ -1,0 +1,40 @@
+{
+	"applicationId": "neutralino.react.template",
+	"version": "1.0.0",
+	"defaultMode": "window",
+	"documentRoot": "/build/",
+	"url": "/",
+	"port": 0,
+	"enableServer": true,
+	"enableNativeAPI": true,
+	"tokenSecurity": "one-time",
+	"nativeAllowList": ["app.*", "filesystem.readDirectory"],
+	"modes": {
+		"window": {
+			"title": "neutralino.react.template",
+			"width": 1024,
+			"height": 700,
+			"minWidth": 640,
+			"minHeight": 480,
+			"center": true,
+			"icon": "/build/logo192.png",
+			"exitProcessOnClose": true,
+			"enableInspector": true
+		}
+	},
+	"logging": {
+		"enabled": true,
+		"writeToLogFile": false
+	},
+	"cli": {
+		"binaryName": "neutralinojs-reactjs-with-ts-template",
+		"resourcesPath": "/build/",
+		"extensionsPath": "/extensions/",
+		"binaryVersion": "4.7.0",
+		"clientVersion": "3.6.0",
+		"frontendLibrary": {
+			"patchFile": "/public/index.html",
+			"devUrl": "http://localhost:3000"
+		}
+	}
+}
