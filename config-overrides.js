@@ -5,7 +5,8 @@ const {
 	addWebpackAlias,
 	addWebpackResolve,
 	addWebpackModuleRule,
-	addBabelPlugin
+	addBabelPlugin,
+	removeModuleScopePlugin
 } = require('customize-cra');
 
 const path = require('path');
@@ -32,6 +33,7 @@ function addLessLoader(options) {
 module.exports = {
 	webpack: override(
 		disableEsLint(),
+		removeModuleScopePlugin(),
 		// 抽出公共模块
 		setWebpackOptimizationSplitChunks({
 			chunks: 'async',
@@ -44,7 +46,7 @@ module.exports = {
 		}),
 		// 别名添加， tsconfig.json也需要添加该别名。
 		addWebpackAlias({
-			src: path.resolve(__dirname, './src'),
+			src: path.resolve(__dirname, './src')
 		}),
 		// 忽略后缀
 		addWebpackResolve({

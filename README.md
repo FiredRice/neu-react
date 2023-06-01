@@ -15,8 +15,6 @@ neu 官方文档 https://neutralino.js.org/
 -   `yarn start` 启动 `react` 服务
 -   `yarn app` 启动 `neu` 服务
 
-**需保证两个服务的端口号保持一致，否则无法正确加载原生 `api`**
-
 ### 构建项目
 
 `yarn build`

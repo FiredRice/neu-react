@@ -1,4 +1,4 @@
-import { Button } from 'antd';
+import { Button, message } from 'antd';
 import logo from './images/logo.svg';
 import { filesystem } from '@neutralinojs/lib';
 import './style/index.less';
@@ -8,7 +8,8 @@ function Home() {
 	const hello = async () => {
 		try {
 			console.log('sss');
-			const data = await filesystem.readDirectory('C:\\Project\\web-study\\neu-react2')
+			const data = await filesystem.readDirectory('C:\\Project\\web-study\\neu-react');
+			message.success(JSON.stringify(data));
 			console.log(data);
 		} catch (error) {
 			console.log(error);
