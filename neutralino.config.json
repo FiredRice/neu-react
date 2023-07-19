@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/neutralinojs/neutralinojs/main/schemas/neutralino.config.schema.json",
-	"applicationId": "neutralino.react.template",
+	"applicationId": "neutralino.react",
 	"version": "1.0.0",
 	"defaultMode": "window",
 	"documentRoot": "/build/",
@@ -9,16 +9,16 @@
 	"enableServer": true,
 	"enableNativeAPI": true,
 	"tokenSecurity": "one-time",
-	"nativeAllowList": ["app.*", "filesystem.readDirectory"],
+	"nativeAllowList": [],
 	"modes": {
 		"window": {
-			"title": "neu-react",
-			"width": 1024,
-			"height": 700,
+			"title": "Neu React",
+			"width": 640,
+			"height": 480,
 			"minWidth": 640,
 			"minHeight": 480,
 			"center": true,
-			"icon": "/build/logo192.png",
+			"icon": "/build/logo512.png",
 			"exitProcessOnClose": true,
 			"enableInspector": false
 		}
@@ -34,8 +34,8 @@
 		"binaryVersion": "4.12.0",
 		"clientVersion": "3.1.0",
 		"frontendLibrary": {
-			"patchFile": "/public/index.html",
-			"devUrl": "http://localhost:3000"
+			"patchFile": "index.html",
+			"devUrl": "http://localhost:3002"
 		}
 	}
 }
